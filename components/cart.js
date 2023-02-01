@@ -31,7 +31,7 @@ export default function Cart() {
           className="text-gray-600 focus:outline-none"
         >
           <svg
-            className="h-5 w-5"
+            className="w-5 h-5"
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -45,7 +45,7 @@ export default function Cart() {
       </div>
       <hr className="my-3" />
       {!hasProducts ? (
-        <h3 className="text-center font-bold text-blue-600">
+        <h3 className="font-bold text-center text-blue-600">
           There are no items in the cart
         </h3>
       ) : null}
@@ -53,10 +53,10 @@ export default function Cart() {
         <CartItem product={product} key={product.id} />
       ))}
       {hasProducts ? (
-        <a className="flex items-center justify-center mt-4 px-3 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+        <a className="flex items-center justify-center px-3 py-2 mt-4 text-sm font-medium text-white uppercase bg-blue-600 rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
           <span>Checkout</span>
           <svg
-            className="h-5 w-5 mx-2"
+            className="w-5 h-5 mx-2"
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
